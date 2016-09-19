@@ -10,3 +10,6 @@ To test:
 > chp(1:10,1:10)
 This will open a plot window showing the following image
 ![chptest](chptest.png)
+
+Github repo created to celebrate #TLAPD2016 Arrrrrrr, R
+![Arrrrrrr](https://pbs.twimg.com/media/CsrmI7DWAAAt176.jpg)
