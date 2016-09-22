@@ -14,8 +14,18 @@ To use:
 Definition and options
 ```
 chp <- function(throughput,response, q=0.95, qx=F, xl="Throughput",yl="Response",tl="Throughput Over Time", ml="Headroom Plot", fit=T, max=T, splits=0)
-```
 
+throughput, response: array of values, both must be the same length
+q=0.95              : default 95%ile outlier trimming for response time values
+qx=F                : default false don't also trim throughput outliers
+xl="Throughput"     : default X-axis label
+yl="Response"       : default Y-axix label
+tl="Throughput..."  : default time series label
+ml="Headroom Plot"  : default main plot label
+fit=T               : show 1/x fit curve by default
+max=T               : show maximum response staircase by default
+splits=0            : set this to split the timeseries data into multiple colored sets
+```
 
 To test:
 ```
