@@ -7,11 +7,22 @@ Inspiration from this [CMG/HPTS paper](http://www.hpts.ws/papers/2007/Cockcroft_
 as a proportion of elapsed time. The replacement for utilization is headroom which is defined as the unused proportion of the maximum useful throughput."
 
 To use:
+```
 > source("chp.r")
+```
+
+Definition and options
+```
+chp <- function(throughput,response, q=0.95, qx=F, xl="Throughput",yl="Response",tl="Throughput Over Time", ml="Headroom Plot", fit=T, max=T, splits=0)
+```
+
 
 To test:
+```
 > chp(1:10,1:10)
-This will open a plot window showing the following image
+```
+This will open a plot window showing the following image. It shows a scatterplot of response time as a function of throughput, percentile outliers can be removed from the response time or both metrics. It shows a histogram of throughput distribution oriented outside the X-axis, response time distribution oriented outside the Y-axis, and a small view of sequential throughput over time for the data. The scatterplot is optionally annotated with a staircase showing the maximum value of the response time in each histogram bin, and an attempt is made to fit a throughput weighted inverse (1/x) curve to the data to find the "knee in the curve" for where the response time starts to increase rapidly with throughput.
+
 ![chptest](chptest.png)
 
 Github repo created to celebrate #TLAPD2016 Arrrrrrr, R
