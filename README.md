@@ -3,7 +3,7 @@ Cockcroft Headroom Plot in R
 
 Code originally written 2006-2008, [documented on my old blog](http://perfcap.blogspot.com/2008/07/enhanced-headroom-plot-in-r.html)
 
-Inspiration from this [CMG/HPTS paper](http://www.hpts.ws/papers/2007/Cockcroft_CMG06-utilization.pdf) and [slide deck](http://www.slideshare.net/adrianco/cmg06-utilization-is-useless) "Utilization is Virtually Useless as a Metric", so what should we use instead? Bottom line: "Utilization is properly defined as busy time
+Inspiration from my [2006 CMG/2007 HPTS paper](http://www.hpts.ws/papers/2007/Cockcroft_CMG06-utilization.pdf) and [slide deck](http://www.slideshare.net/adrianco/cmg06-utilization-is-useless) "Utilization is Virtually Useless as a Metric", so what should we use instead? Bottom line: "Utilization is properly defined as busy time
 as a proportion of elapsed time. The replacement for utilization is headroom which is defined as the unused proportion of the maximum useful throughput."
 
 To use:
@@ -34,6 +34,9 @@ To test:
 This will open a plot window showing the following image. It shows a scatterplot of response time as a function of throughput, percentile outliers can be removed from the response time or both metrics. It shows a histogram of throughput distribution oriented outside the X-axis, response time distribution oriented outside the Y-axis, and a small view of sequential throughput over time for the data. The scatterplot is optionally annotated with a staircase showing the maximum value of the response time in each histogram bin, and an attempt is made to fit a throughput weighted inverse (1/x) curve to the data to find the "knee in the curve" for where the response time starts to increase rapidly with throughput.
 
 ![chptest](chptest.png)
+
+Also see the slides from my 5-minute ignite talk on [Bottleneck Analysis](http://www.slideshare.net/adrianco/bottleneck-analysis-devopsdays-silicon-valley-2013)
+![bottlenecks](bottlenecks.png)
 
 Github repo created to celebrate #TLAPD2016 Arrrrrrr, R
 ![Arrrrrrr](https://pbs.twimg.com/media/CsrmI7DWAAAt176.jpg)
